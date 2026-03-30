@@ -48,6 +48,207 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Your CSS Below **/
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--clr-lightLavender);
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding: 20px;
+}
+
+.wrap {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.score-container {
+  background: linear-gradient(
+    180deg,
+    var(--gra-lightSlateBlue),
+    var(--gra-lightRoyalBlue)
+  );
+  color: var(--clr-white); 
+  padding: 30px;
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.score-header {
+  color: var(--clr-lightLavender);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.score-circle {
+  background: linear-gradient(
+    180deg,
+    var(--gra-violetBlue),
+    var(--gra-persianBlue)
+  );
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-number {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.score-total {
+  font-size: 14px;
+  color: var(--clr-lightLavender);
+  opacity: 0.5;
+}
+
+.score-container h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+.score-note {
+  font-size: 16px;
+  color: var(--clr-lightLavender);
+  padding: 0 20px;
+  line-height: 1.4;
+}
+
+.summary-container {
+  background-color: var(--clr-white);
+  padding: 30px;
+  width: 50%;
+}
+
+.summary-container h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--clr-darkGrayBlue);
+}
+
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.right {
+  color: var(--clr-darkGrayBlue);
+  opacity: 0.5;
+}
+
+.right strong {
+  color: var(--clr-darkGrayBlue);
+  margin-right: 5px;
+}
+
+
+.reaction {
+  background-color: rgba(255, 87, 87, 0.05);
+  color: var(--clr-lightRed);
+}
+
+.memory {
+  background-color: rgba(255, 176, 31, 0.05);
+  color: var(--clr-orangeYellow);
+}
+
+.verbal {
+  background-color: rgba(0, 189, 145, 0.05);
+  color: var(--clr-greenTeal);
+}
+
+.visual {
+  background-color: rgba(17, 37, 212, 0.05);
+  color: var(--clr-cobaltBlue);
+}
+
+button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--clr-darkGrayBlue);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(
+    180deg,
+    var(--gra-lightSlateBlue),
+    var(--gra-lightRoyalBlue)
+  );
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 0px;
+    align-items: flex-start;
+  }
+
+  .wrap {
+    flex-direction: column;
+    border-radius: 0 0 20px 20px;
+    max-width: 100%;
+  }
+  
+  .score-container {
+    width: 100%;
+    border-radius: 0 0 50px 50px;
+    padding: 25px;
+  }
+
+  .summary-container {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .attribution {
+    padding: 10px;
+  }
+}
+  
 /** Attribution CSS **/
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }

@@ -31,7 +31,7 @@
   --gra-lightRoyalBlue: hsl(241, 81%, 54%); /* Background */
 
   --gra-violetBlue: hsl(256, 72%, 46%, 1); /* Circle */
-  --gra-persianBlue: hsl(241%, 72%, 46%, 0); /* Circle */
+  --gra-persianBlue: hsl(241, 72%, 46%, 0); /* Circle */
 
   /* Neutral Colours */
   --clr-white: hsl(0, 0%, 100%);
